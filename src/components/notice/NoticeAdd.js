@@ -33,7 +33,8 @@ export default function NoticeAdd() {
     const addnotice = () => {
         const currentDate = new Date();
         const selectedDate = new Date(formData.enddt);
-
+        currentDate.setHours(0, 0, 0, 0);
+        selectedDate.setHours(0, 0, 0, 0);
         if (selectedDate < currentDate) {
             alert('마감 기한 설정을 확인해주세요.');
             return;
