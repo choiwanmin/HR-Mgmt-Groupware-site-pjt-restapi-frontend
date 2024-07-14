@@ -3,6 +3,7 @@ import './header.css';
 function Header() {
     const name = sessionStorage.getItem("usernm");
     const deptnm = sessionStorage.getItem("deptnm");
+    const memberimgnm = sessionStorage.getItem("memberimgnm");
   return (
       <nav className="w_bg nav_top fix_top">
         <div className="header_wrapper">
@@ -20,7 +21,7 @@ function Header() {
                     }
                 </li>
                 <li >
-                    <img style={{borderRadius: "20px", width:"40px", height:"40px"}} />
+                    <img src={`${process.env.REACT_APP_SERVER}/member/memberimg/` + memberimgnm} style={{borderRadius: "20px", width:"40px", height:"40px"}} />
                 </li>
             </ul>
         </div>
