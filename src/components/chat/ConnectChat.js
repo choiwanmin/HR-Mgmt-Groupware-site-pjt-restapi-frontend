@@ -26,7 +26,7 @@ export default function ConnectChatRoom({ roomid, userid, reloadRoom, isInvite, 
     const userList = useSelector(state => state.modalArr);
     const chatContentRef = useRef(null);
     const navigate = useNavigate();
-    const[imgname, setImgname] = useState('');
+    const [imgname, setImgname] = useState('');
 
 
 
@@ -207,14 +207,14 @@ export default function ConnectChatRoom({ roomid, userid, reloadRoom, isInvite, 
                 stompClientRef.current.send(`/send/chat/message/` + roomid + '/' + page, {}, JSON.stringify(message));
                 loadMessages(roomid);
             }
-        )
+            )
             .catch(error => {
                 console.error('Error uploading file:', error);
                 alert('파일 업로드에 실패했습니다.');
             });
 
 
-            setFile('');
+        setFile('');
     };
 
     const showFileMessage = (message) => {
@@ -233,7 +233,7 @@ export default function ConnectChatRoom({ roomid, userid, reloadRoom, isInvite, 
             }
         } else {
             return message.content && message.content.split('<br/>').map((content, index) => (
-                <React.Fragment key={index}>
+                <React.Fragment key={index}> 
                     {content}
                     {index !== message.content.split('<br/>').length - 1 && <br />
                     }
@@ -345,11 +345,10 @@ export default function ConnectChatRoom({ roomid, userid, reloadRoom, isInvite, 
                                                                                     <tbody>
                                                                                         <tr>
                                                                                             <td rowSpan="6">
-                                                                                                <img 
+                                                                                                <img
                                                                                                     src={`${process.env.REACT_APP_SERVER}/member/memberimg/` + memberchatList.memberimgnm}
                                                                                                     alt="Profile Img"
-                                                                                                    style={{ width: '80%', height: '80%' }} />
-
+                                                                                                    style={{ width: '267px', height: '222px', objectFit:"contain"}} />
                                                                                             </td>
                                                                                         </tr>
                                                                                         <tr>

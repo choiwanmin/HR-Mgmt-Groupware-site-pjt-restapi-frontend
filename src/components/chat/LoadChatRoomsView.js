@@ -49,7 +49,7 @@ export default function LoadChatRoomsView() {
         axios.post(`${process.env.REACT_APP_SERVER}/auth/chat/chatrooms/invite`, {}, { headers: { auth_token: token }, params: params })
             .then(function (res) {
                 if (res.status === 200) {
-                    alert('사용자 초대 성공');
+
                     loadChatRooms();
                     navigate('/messenger', { replace: true });
                     window.location.reload();
@@ -167,7 +167,7 @@ export default function LoadChatRoomsView() {
                                                                     <a key={index} href="#" className="d-flex align-items-center" onClick={() => roomConnect(chatRoom.chatroomid)}>
                                                                         <div className="flex-shrink-0">
                                                                             <img className="img-fluid-center"
-                                                                                src={chatRoom.roomType === 'PRIVATE' ? `${process.env.REACT_APP_SERVER}/member/memberimg/` + chatRoom.myimg : `${process.env.REACT_APP_SERVER}/member/memberimg/` + chatRoom.img}
+                                                                                src={`${process.env.REACT_APP_SERVER}/member/memberimg/` + chatRoom.img}
                                                                                 alt="Profile Img"
                                                                                 style={{ width: '45px', height: '45px' }} />
                                                                         </div>
