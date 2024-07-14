@@ -233,7 +233,7 @@ export default function ConnectChatRoom({ roomid, userid, reloadRoom, isInvite, 
             }
         } else {
             return message.content && message.content.split('<br/>').map((content, index) => (
-                <React.Fragment key={index}>
+                <React.Fragment key={index}> 
                     {content}
                     {index !== message.content.split('<br/>').length - 1 && <br />
                     }
@@ -348,7 +348,7 @@ export default function ConnectChatRoom({ roomid, userid, reloadRoom, isInvite, 
                                                                                                 <img
                                                                                                     src={`${process.env.REACT_APP_SERVER}/member/memberimg/` + memberchatList.memberimgnm}
                                                                                                     alt="Profile Img"
-                                                                                                    style={{ width: '80%', height: '80%' }} />
+                                                                                                    style={{ width: '267px', height: '222px', objectFit:"contain"}} />
                                                                                             </td>
                                                                                         </tr>
                                                                                         <tr>

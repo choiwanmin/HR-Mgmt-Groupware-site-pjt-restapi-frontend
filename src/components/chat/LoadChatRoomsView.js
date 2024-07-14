@@ -49,7 +49,7 @@ export default function LoadChatRoomsView() {
         axios.post(`${process.env.REACT_APP_SERVER}/auth/chat/chatrooms/invite`, {}, { headers: { auth_token: token }, params: params })
             .then(function (res) {
                 if (res.status === 200) {
-                    alert('사용자 초대 성공');
+
                     loadChatRooms();
                     navigate('/messenger', { replace: true });
                     window.location.reload();

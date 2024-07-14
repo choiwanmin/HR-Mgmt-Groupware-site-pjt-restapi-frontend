@@ -119,7 +119,7 @@ export default function NoticeList() {
 
     return (
         <div className="main_body">
-            <div className="record_table w_bg">
+            <div className="record_table w_bg pt-5">
                 <h2 className="noticetitle">{formType} 공지 사항</h2>
                 <div className="notice_tab">
                     <button
@@ -149,7 +149,7 @@ export default function NoticeList() {
                     <div className="record_table_wrapper">
                         <div className="left_table">
                             <table className="record_rtable">
-                                <thead>
+                                <thead className="fw-bolder">
                                     <tr>
                                         <th>분류</th>
                                         <th>글제목</th>
