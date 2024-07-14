@@ -74,6 +74,16 @@ export default function MemberInfo() {
 
     //
     //
+    const userinfopgbtn = (userid) => {
+        navigate('/user/info/' + userid);
+    }
+
+    const memberinfopgbtn = (userid) => {
+        navigate('/member/info/' + userid);
+    }
+
+    //
+    //
     const handleFileChange = (event) => {
         const file = event.target.files[0];
         if (file) {
@@ -124,7 +134,7 @@ export default function MemberInfo() {
                         // setIsEditing(false);
                         window.location.reload();
                         console.log(mdto?.memberid);
-                        if(sessionStorage.getItem("type") === "emp" && sessionStorage.getItem("memberid") === "undefined") {
+                        if (sessionStorage.getItem("type") === "emp" && sessionStorage.getItem("memberid") === "undefined") {
                             console.log(mdto?.memberid);
                             sessionStorage.clear();
                             navigate('/login');
@@ -144,6 +154,18 @@ export default function MemberInfo() {
 
     return (
         <div className="main_body">
+            {sessionStorage.getItem('type') === 'admin' && (
+                <div class="usersearch-body">
+                    <div class="memberinfo_admin_menu">
+                        <button type="button" className="btn blue_btn" onClick={() => userinfopgbtn(userid)}>
+                            로그인 정보
+                        </button>
+                        <button type="button" className="btn blue_btn" onClick={() => memberinfopgbtn(userid)}>
+                            개인정보
+                        </button>
+                    </div>
+                </div>
+            )}
             <div className="memberinfo_table w_bg">
                 <div className="memberinfo_table_title">
                     <p>내 정보 페이지</p>

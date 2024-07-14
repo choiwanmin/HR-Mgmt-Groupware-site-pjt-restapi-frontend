@@ -115,22 +115,24 @@ export default function Userinfo() {
         navigate('/user/info/' + userid);
     }
 
-    const memberinfopgbtn = () => {
-        navigate('/');
+    const memberinfopgbtn = (userid) => {
+        navigate('/member/info/' + userid);
     }
 
     return (
         <div class="main_body">
-            <div class="usersearch-body">
-                <div class="memberinfo_admin_menu">
-                    <button type="button" className="btn blue_btn" onClick={() => userinfopgbtn(user.id)}>
-                        로그인 정보
-                    </button>
-                    <button type="button" className="btn blue_btn" onClick={memberinfopgbtn}>
-                        개인정보
-                    </button>
+            {sessionStorage.getItem('type') === 'admin' && (
+                <div class="usersearch-body">
+                    <div class="memberinfo_admin_menu">
+                        <button type="button" className="btn blue_btn" onClick={() => userinfopgbtn(user.id)}>
+                            로그인 정보
+                        </button>
+                        <button type="button" className="btn blue_btn" onClick={() => memberinfopgbtn(user.id)}>
+                            개인정보
+                        </button>
+                    </div>
                 </div>
-            </div>
+            )}
             <div class="memberinfo_table w_bg">
                 <div class="memberinfo_table_title">
                     <p>내 로그인 정보 페이지</p>
