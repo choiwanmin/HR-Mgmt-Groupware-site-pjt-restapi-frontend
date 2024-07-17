@@ -9,7 +9,7 @@ function Header() {
         <div className="header_wrapper">
             <div className="flex_center header_logo">
                 <a className="logo_right" href="/">
-                    <div className="loginBoxTitle header_text">HRD SYSTEM</div>
+                    <div className="loginBoxTitle header_text">TeamHRD_K</div>
                 </a>
             </div>
             <ul className="flex_center nav_right">
