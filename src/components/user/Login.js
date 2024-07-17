@@ -57,7 +57,7 @@ export default function Login() {
         <div className="form_wrapper">       
             <div id="posts_list">
                 <div className="container login_wrapper">
-                    <div className="loginBoxTitle">HRD SYSTEM LOGIN</div>
+                    <div className="loginBoxTitle">TeamHRD_K LOGIN</div>
                     <form name="userloginf">
                         {/* <span>
                             <p id="valid" className="alert alert-danger">${errorMessage}</p>

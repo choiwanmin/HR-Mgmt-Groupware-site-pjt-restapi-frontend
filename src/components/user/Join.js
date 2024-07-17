@@ -71,7 +71,7 @@ export default function Join() {
         <div className="form_wrapper">
             <div id="posts_list">
                 <div className="container login_wrapper">
-                    <div className="loginBoxTitle">HRD SYSTEM JOIN</div>
+                    <div className="loginBoxTitle">TeamHRD_K JOIN</div>
                     <form>
                         <div className="form-group">
                             <label className="w25">유저ID</label>
