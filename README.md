@@ -5,7 +5,6 @@
 * [프로젝트 소개](#프로젝트-소개)
 * [기술 스택](#기술-스택)
 * [주요 기능](#주요-기능)
-* [주요 작업 내용](#주요-작업-내용)
 * [프로젝트 아키텍쳐](#프로젝트-아키텍쳐)
 * [클라이언트 화면 UI](#클라이언트-화면-UI)
 * [기타](#기타)
@@ -32,24 +31,16 @@
 |SEVER||
 |ETC.||
 
-## 주요 기능능
+## 주요 기능
 
-## 주요 작업 내용
-> ### 개발 담당 영역
-* `HRD SYSTEM` 영역
- 
-|이름|담당 영역|
-|:---|:---|
-|최  (팀장)|`USERS`, `MEMBERS`, `WORK&EDU`|
-|진  |`WORK_RECORD`|
+<details>
+<summary>Back-End 결과물</summary>
+<div markdown="1">
 
-* `GROUPWARE SYSTEM` 영역
- 
-|이름|담당 영역|
-|:---|:---|
-|백  |`DOCX`|
-|정  |`MAIL`,`SCHEDULER`|
-|황  |`CHAT`|
+Back-End 결과물
+
+</div>
+</details>
 
 ## 프로젝트 아키텍쳐
 
@@ -57,8 +48,14 @@
 *※ 2024/00/00 기준 데이터 UI*
 
 ## 기타
-> ### DB ERD
-
 > ### 프로젝트 구조
+
+<details>
+<summary>프로젝트 구조 보기</summary>
+<div markdown="1">
+
 ```
 ```
+
+</div>
+</details>
