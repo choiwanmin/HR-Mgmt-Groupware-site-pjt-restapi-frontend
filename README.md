@@ -1,4 +1,4 @@
-# TeamHRD_K<br/>(`HRD&GROUPWARE SYSTEM`통합 사내 시스템)
+# TeamHRD_K<br/>(`HRD&GROUPWARE SYSTEM` 통합 사내 시스템)
 ※ 기존에 수행한 https://github.com/choiwanmin/kosta_final_pjt_restapi_frontend 프로젝트를 정비 및 정리
 
 ## 목차
