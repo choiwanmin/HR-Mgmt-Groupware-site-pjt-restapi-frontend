@@ -127,6 +127,81 @@
 <div markdown="1">
  
 ```
+📦kosta_final_pjt_restapi_frontend_review
+┣ 📂.git
+┣ 📂node_modules
+┣ 📂public
+┣ 📂src
+┃ ┣ 📂components
+┃ ┃ ┣ 📂charts
+┃ ┃ ┃ ┣ 📜ChartMain.js
+┃ ┃ ┃ ┣ 📜ChartModal.js
+┃ ┃ ┃ ┣ 📜charts.css
+┃ ┃ ┃ ┗ 📜charts_calendar.css
+┃ ┃ ┣ 📂chat
+┃ ┃ ┃ ┣ 📜ChatModal.js
+┃ ┃ ┃ ┣ 📜ConnectChat.js
+┃ ┃ ┃ ┣ 📜CreateChatroom.js
+┃ ┃ ┃ ┣ 📜LoadChatRoomsView.js
+┃ ┃ ┃ ┣ 📜MainChat.css
+┃ ┃ ┃ ┣ 📜MainChat.js
+┃ ┃ ┃ ┣ 📜MainChatReset.css
+┃ ┃ ┃ ┗ 📜SendMessage.js
+┃ ┃ ┣ 📂common
+┃ ┃ ┃ ┣ 📜header.css
+┃ ┃ ┃ ┣ 📜Header.js
+┃ ┃ ┃ ┣ 📜Leftnav.css
+┃ ┃ ┃ ┣ 📜Leftnav.js
+┃ ┃ ┃ ┣ 📜MemModal.js
+┃ ┃ ┃ ┗ 📜modal.css
+┃ ┃ ┣ 📂corp
+┃ ┃ ┃ ┣ 📜dept.css
+┃ ┃ ┃ ┣ 📜Deptlist.js
+┃ ┃ ┃ ┣ 📜joblv.css
+┃ ┃ ┃ ┗ 📜Joblvlist.js
+┃ ┃ ┣ 📂docx
+┃ ┃ ┃ ┣ 📜AddReport.js
+┃ ┃ ┃ ┣ 📜ReactList.js
+┃ ┃ ┃ ┗ 📜ReportDetail.js
+┃ ┃ ┣ 📂notice
+┃ ┃ ┃ ┣ 📜Notice.css
+┃ ┃ ┃ ┣ 📜NoticeAdd.js
+┃ ┃ ┃ ┣ 📜NoticeDetail.js
+┃ ┃ ┃ ┣ 📜NoticeList.js
+┃ ┃ ┃ ┗ 📜Pageing.css
+┃ ┃ ┣ 📂record
+┃ ┃ ┃ ┣ 📂function
+┃ ┃ ┃ ┃ ┣ 📜common.js
+┃ ┃ ┃ ┃ ┗ 📜emp.js
+┃ ┃ ┃ ┣ 📜Dept.js
+┃ ┃ ┃ ┣ 📜MyRecord.js
+┃ ┃ ┃ ┣ 📜record.css
+┃ ┃ ┃ ┣ 📜RecordAdmin.js
+┃ ┃ ┃ ┗ 📜RecordTable.js
+┃ ┃ ┗ 📂user
+┃ ┃ ┃ ┣ 📜Join.js
+┃ ┃ ┃ ┣ 📜Login.js
+┃ ┃ ┃ ┣ 📜member.css
+┃ ┃ ┃ ┣ 📜Memberinfo.js
+┃ ┃ ┃ ┣ 📜user.css
+┃ ┃ ┃ ┣ 📜userform.css
+┃ ┃ ┃ ┣ 📜Userinfo.js
+┃ ┃ ┃ ┗ 📜Userlist.js
+┃ ┣ 📜App.css
+┃ ┣ 📜App.test.js
+┃ ┣ 📜index.css
+┃ ┣ 📜index.js
+┃ ┣ 📜logo.svg
+┃ ┣ 📜reportWebVitals.js
+┃ ┣ 📜Router.js
+┃ ┣ 📜setupTests.js
+┃ ┗ 📜store.js
+┣ 📜.env
+┣ 📜.gitignore
+┣ 📜Dockerfile
+┣ 📜package-lock.json
+┣ 📜package.json
+┗ 📜README.md
 ```
 
 </div>
