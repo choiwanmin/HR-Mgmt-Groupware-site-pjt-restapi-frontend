@@ -5,7 +5,6 @@
 * [프로젝트 소개](#프로젝트-소개)
 * [기술 스택](#기술-스택)
 * [주요 기능](#주요-기능)
-* [주요 작업 내용](#주요-작업-내용)
 * [프로젝트 아키텍쳐](#프로젝트-아키텍쳐)
 * [클라이언트 화면 UI](#클라이언트-화면-UI)
 * [기타](#기타)
@@ -21,7 +20,6 @@
 * 팀 및 서비스 목표
   * 사내 사용자가 각기 별개의 작업 환경에서 통합된 하나의 프로젝트를 동시에 수행할 수 있도록 도움을 주는 소프트웨어를 제작
   * 관리자와 사원의 영역을 나누어 업무를 정형화함으로써 업무 생산성 향상을 목적에 둠
-* 개인 목표 :
 
 ## 기술 스택
 |구분|사용 기술|
@@ -86,8 +84,6 @@
 
  </div>
  </details>
-  
-## 주요 작업 내용
 
 ## 프로젝트 아키텍쳐
 |![finalpjt_architecture](https://github.com/user-attachments/assets/fda679aa-ceae-4c2e-b0f2-0e44103fd022)|
@@ -127,6 +123,81 @@
 <div markdown="1">
  
 ```
+📦kosta_final_pjt_restapi_frontend_review
+┣ 📂.git
+┣ 📂node_modules
+┣ 📂public
+┣ 📂src
+┃ ┣ 📂components
+┃ ┃ ┣ 📂charts
+┃ ┃ ┃ ┣ 📜ChartMain.js
+┃ ┃ ┃ ┣ 📜ChartModal.js
+┃ ┃ ┃ ┣ 📜charts.css
+┃ ┃ ┃ ┗ 📜charts_calendar.css
+┃ ┃ ┣ 📂chat
+┃ ┃ ┃ ┣ 📜ChatModal.js
+┃ ┃ ┃ ┣ 📜ConnectChat.js
+┃ ┃ ┃ ┣ 📜CreateChatroom.js
+┃ ┃ ┃ ┣ 📜LoadChatRoomsView.js
+┃ ┃ ┃ ┣ 📜MainChat.css
+┃ ┃ ┃ ┣ 📜MainChat.js
+┃ ┃ ┃ ┣ 📜MainChatReset.css
+┃ ┃ ┃ ┗ 📜SendMessage.js
+┃ ┃ ┣ 📂common
+┃ ┃ ┃ ┣ 📜header.css
+┃ ┃ ┃ ┣ 📜Header.js
+┃ ┃ ┃ ┣ 📜Leftnav.css
+┃ ┃ ┃ ┣ 📜Leftnav.js
+┃ ┃ ┃ ┣ 📜MemModal.js
+┃ ┃ ┃ ┗ 📜modal.css
+┃ ┃ ┣ 📂corp
+┃ ┃ ┃ ┣ 📜dept.css
+┃ ┃ ┃ ┣ 📜Deptlist.js
+┃ ┃ ┃ ┣ 📜joblv.css
+┃ ┃ ┃ ┗ 📜Joblvlist.js
+┃ ┃ ┣ 📂docx
+┃ ┃ ┃ ┣ 📜AddReport.js
+┃ ┃ ┃ ┣ 📜ReactList.js
+┃ ┃ ┃ ┗ 📜ReportDetail.js
+┃ ┃ ┣ 📂notice
+┃ ┃ ┃ ┣ 📜Notice.css
+┃ ┃ ┃ ┣ 📜NoticeAdd.js
+┃ ┃ ┃ ┣ 📜NoticeDetail.js
+┃ ┃ ┃ ┣ 📜NoticeList.js
+┃ ┃ ┃ ┗ 📜Pageing.css
+┃ ┃ ┣ 📂record
+┃ ┃ ┃ ┣ 📂function
+┃ ┃ ┃ ┃ ┣ 📜common.js
+┃ ┃ ┃ ┃ ┗ 📜emp.js
+┃ ┃ ┃ ┣ 📜Dept.js
+┃ ┃ ┃ ┣ 📜MyRecord.js
+┃ ┃ ┃ ┣ 📜record.css
+┃ ┃ ┃ ┣ 📜RecordAdmin.js
+┃ ┃ ┃ ┗ 📜RecordTable.js
+┃ ┃ ┗ 📂user
+┃ ┃ ┃ ┣ 📜Join.js
+┃ ┃ ┃ ┣ 📜Login.js
+┃ ┃ ┃ ┣ 📜member.css
+┃ ┃ ┃ ┣ 📜Memberinfo.js
+┃ ┃ ┃ ┣ 📜user.css
+┃ ┃ ┃ ┣ 📜userform.css
+┃ ┃ ┃ ┣ 📜Userinfo.js
+┃ ┃ ┃ ┗ 📜Userlist.js
+┃ ┣ 📜App.css
+┃ ┣ 📜App.test.js
+┃ ┣ 📜index.css
+┃ ┣ 📜index.js
+┃ ┣ 📜logo.svg
+┃ ┣ 📜reportWebVitals.js
+┃ ┣ 📜Router.js
+┃ ┣ 📜setupTests.js
+┃ ┗ 📜store.js
+┣ 📜.env
+┣ 📜.gitignore
+┣ 📜Dockerfile
+┣ 📜package-lock.json
+┣ 📜package.json
+┗ 📜README.md
 ```
 
 </div>
