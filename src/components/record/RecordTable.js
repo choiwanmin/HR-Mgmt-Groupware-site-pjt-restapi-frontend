@@ -1,39 +1,76 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+// export default function RecordTable(props){
+//     let time = new Date();
+//     const [recordDate, setRecordDate] = useState(props.list);
+//     const [year,setYear] = useState(time.getFullYear());
+//     const [month,setMonth] = useState(time.getMonth());
+//     const [dateNum, setDateNum] = useState(0);
+
+//     const arrow = (num)=>{
+//         setDateNum(dateNum + num );
+//         setMonth(month + num);
+//     }
+//     useEffect(()=>{
+//         if(month<1){
+//             setMonth(12);
+//             setYear(year-1);
+//         }else if(month>12){
+//             setMonth(1);
+//             setYear(year+1);
+//         }
+//         axios.get(`${process.env.REACT_APP_SERVER}/record/list`,
+//         {   params:{
+//             dept:props.dept,
+//             cnt:dateNum}},
+//         )
+//      .then((res)=>{
+//         if(res.status === 200){
+//             setRecordDate(res.data);
+//         }
+//      })
+//     },[])
 
 
-export default function RecordTable(props){
-    let time = new Date();
+export default function RecordTable(props) {
+    const time = new Date();
     const [recordDate, setRecordDate] = useState(props.list);
-    const [year,setYear] = useState(time.getFullYear());
-    const [month,setMonth] = useState(time.getMonth());
+    const [year, setYear] = useState(time.getFullYear());
+    const [month, setMonth] = useState(time.getMonth() + 1); // months are 0-indexed
     const [dateNum, setDateNum] = useState(0);
 
-    const arrow = (num)=>{
-        setDateNum(dateNum + num );
-        setMonth(month + num);
-    }
-    useEffect(()=>{
-        if(month<1){
-            setMonth(12);
-            setYear(year-1);
-        }else if(month>12){
-            setMonth(1);
-            setYear(year+1);
-        }
-        axios.get(`${process.env.REACT_APP_SERVER}/record/list`,
-        {   params:{
-            dept:props.dept,
-            cnt:dateNum}},
-        )
-     .then((res)=>{
-        if(res.status === 200){
-            setRecordDate(res.data);
-        }
-     })
-    },[arrow])
+    const arrow = (num) => {
+        setDateNum(prevDateNum => prevDateNum + num);
+        setMonth(prevMonth => {
+            const newMonth = prevMonth + num;
+            if (newMonth < 1) {
+                setYear(prevYear => prevYear - 1);
+                return 12;
+            } else if (newMonth > 12) {
+                setYear(prevYear => prevYear + 1);
+                return 1;
+            }
+            return newMonth;
+        });
+    };
 
+    useEffect(() => {
+        axios.get(`${process.env.REACT_APP_SERVER}/record/list`, {
+            params: {
+                dept: props.dept,
+                cnt: dateNum
+            }
+        })
+        .then((res) => {
+            if (res.status === 200) {
+                setRecordDate(res.data);
+            }
+        })
+        .catch(err => {
+            console.error('Error fetching data:', err);
+        });
+    }, [dateNum, month, year, props.dept]);
 
 
     return(

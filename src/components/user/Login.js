@@ -47,7 +47,7 @@ export default function Login() {
                 if (error.response) {
                     alert('로그인 중 에러가 발생했습니다.');
                     console.error('로그인 에러:', error);
-                    alert('로그인 실패');
+                    // alert('로그인 실패');
                     navigate('/login');
                 }
             })
