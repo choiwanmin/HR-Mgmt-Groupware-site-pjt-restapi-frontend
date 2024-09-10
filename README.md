@@ -199,6 +199,10 @@
 <details>
 <summary> 스케줄러 페이지 보기</summary>
 <div markdown="1">
+
+ |스케줄러 메인|
+ |:---:|
+ |![finalpjt_restapi_ui (22)](https://github.com/user-attachments/assets/ce6fa728-afb0-43ac-9e34-b228a2efbe2d)|
  
 </div>
 </details>
