@@ -90,6 +90,125 @@
 |:---:|
 
 ## 클라이언트 화면 UI
+*※ 2024/07/15 기준 데이터 UI*
+
+> ### 메인 관련 페이지
+
+<details>
+<summary>메인 관련 페이지 보기</summary>
+<div markdown="1">
+ 
+ |메인(로그인)|회원가입|
+ |:---:|:---:|
+ |![finalpjt_restapi_ui (2)](https://github.com/user-attachments/assets/01b69e1e-4e31-402c-a052-68c32ed0515b)|![finalpjt_restapi_ui (3)](https://github.com/user-attachments/assets/24bc0505-904a-43ad-be8b-6879ec16967d)|
+
+</div>
+</details>
+
+> ### 관리자 페이지
+
+<details>
+<summary>관리자 페이지 보기</summary>
+<div markdown="1">
+ 
+ |관리자 메인|사원 근태 관리(근무 시간)|
+ |:---:|:---:|
+ |![finalpjt_restapi_ui (4)](https://github.com/user-attachments/assets/7cb75388-8c42-46d3-b18c-5c0101c7735a)|![finalpjt_restapi_ui (5)](https://github.com/user-attachments/assets/285c7427-8fe5-4577-9040-e53d781ab5aa)|
+
+ |사원 근태 관리(초과 근무)|사원 근태 관리(부서 선택)|
+ |:---:|:---:|
+ |![finalpjt_restapi_ui (6)](https://github.com/user-attachments/assets/93b8ae50-fa55-4022-ba76-2fa1de54dcfa)|![finalpjt_restapi_ui (7)](https://github.com/user-attachments/assets/009d5462-e9d5-4180-b24c-58d3749dca7e)|
+
+ |직원 목록|사용자 로그인 정보|사용자 로그인 정보 수정|직원 이력 정보|직원 이력 정보 수정|
+ |:---:|:---:|:---:|:---:|:---:|
+ |![finalpjt_restapi_ui (14)](https://github.com/user-attachments/assets/c8ba853f-739b-4795-9d68-893b0ec43e79)|![finalpjt_restapi_ui (15)](https://github.com/user-attachments/assets/d7fcbf54-484d-48d9-b5f5-ce2cbc3116cf)|![finalpjt_restapi_ui (17)](https://github.com/user-attachments/assets/8af0a902-4ea5-48ba-81ad-1d67cbae0ae0)|![finalpjt_restapi_ui (16)](https://github.com/user-attachments/assets/4aeb8bde-ff84-49da-a374-c52280c81cce)|![finalpjt_restapi_ui (18)](https://github.com/user-attachments/assets/bc865875-1b9c-4121-b3e9-3b0dbc67e4fd)|
+
+ |부서 목록|부서 추가|
+ |:---:|:---:|
+ |![finalpjt_restapi_ui (1)](https://github.com/user-attachments/assets/7a64af12-5ec0-400f-a381-0a4a89ad75a4)|![finalpjt_restapi_ui (19)](https://github.com/user-attachments/assets/d79c02fc-2bd7-4ed8-b392-5bb1f8d12aaa)|
+
+ |직급 목록|직급 추가|
+ |:---:|:---:|
+ |![finalpjt_restapi_ui (20)](https://github.com/user-attachments/assets/497d1c4f-3908-496e-914a-fb595025b59c)|![finalpjt_restapi_ui (21)](https://github.com/user-attachments/assets/9a8f2127-01d5-470d-9078-8a86e88387de)|
+ 
+</div>
+</details>
+
+> ### 직원 페이지
+
+<details>
+<summary>직원 메인 페이지 보기</summary>
+<div markdown="1">
+
+ |직원 메인|출퇴근 관리|
+ |:---:|:---:|
+ |![finalpjt_restapi_ui (8)](https://github.com/user-attachments/assets/718a3dfd-bee5-4f0f-a770-274ee45a131e)|![finalpjt_restapi_ui (11)](https://github.com/user-attachments/assets/d73141ae-1a13-4102-9d73-ee9567db253c)|
+
+ |내 로그인 정보|내 이력 정보|
+ |:---:|:---:|
+ |![finalpjt_restapi_ui (9)](https://github.com/user-attachments/assets/f2e02f53-52a2-4b78-947b-4435c26bd3d9)|![finalpjt_restapi_ui (10)](https://github.com/user-attachments/assets/e9c40465-f0f2-4cc3-a766-07f8cd899942)|
+
+ |부서장(직원) 메인|부서 근태관리|
+ |:---:|:---:|
+ |![finalpjt_restapi_ui (12)](https://github.com/user-attachments/assets/65057be0-de1f-477b-8252-62235ae3c8a2)|![finalpjt_restapi_ui (13)](https://github.com/user-attachments/assets/65a8307a-f2a3-42ae-a8a7-7ecab4cc0662)|
+ 
+</div>
+</details>
+
+<details>
+<summary>공지 게시판 페이지 보기</summary>
+<div markdown="1">
+
+ |공지 게시판(전체공지)|공지작성|공지 게시판(부서공지)|
+ |:---:|:---:|:---:|
+ |![finalpjt_restapi_ui (23)](https://github.com/user-attachments/assets/fe40ddad-292a-43fe-9660-82f62c79f057)|![finalpjt_restapi_ui (24)](https://github.com/user-attachments/assets/f8f1bf7d-fc76-46b3-b85c-17dc5ad26210)|![finalpjt_restapi_ui (25)](https://github.com/user-attachments/assets/022d49ae-7b50-47de-9c31-db718bf9deed)|
+
+</div>
+</details>
+
+<details>
+<summary>메신저 페이지 보기</summary>
+<div markdown="1">
+
+ |메신저 메인|대화 상대 초대|
+ |:---:|:---:|
+ |![finalpjt_restapi_ui (26)](https://github.com/user-attachments/assets/bce0fd65-464e-4c8a-bd2d-05c87748f092)|![finalpjt_restapi_ui (27)](https://github.com/user-attachments/assets/9a198e81-6d36-4625-acd6-2355f10add76)|
+
+ |1:1 대화|그룹 대화|
+ |:---:|:---:|
+ |![finalpjt_restapi_ui (35)](https://github.com/user-attachments/assets/62b925be-00b6-450a-bd40-c5174aeea891)|![finalpjt_restapi_ui (29)](https://github.com/user-attachments/assets/e6ffda21-b6e0-42ef-a43f-34fdeb31c191)|
+
+ |대화방 이름 변경|대화 상대 정보 조회|
+ |:---:|:---:|
+ |![finalpjt_restapi_ui (30)](https://github.com/user-attachments/assets/f75f8ee0-0d12-4c9d-b492-86e389f16149)|![finalpjt_restapi_ui (31)](https://github.com/user-attachments/assets/3aa47fd4-6d90-449d-868f-23818081924b)|
+
+</div>
+</details>
+
+<details>
+<summary>문서 페이지 보기</summary>
+<div markdown="1">
+
+ |문서함 메인|문서 작성|문서 상세 페이지|
+ |:---:|:---:|:---:|
+ |![finalpjt_restapi_ui (34)](https://github.com/user-attachments/assets/310c2dd2-c5e8-437b-ad62-61f6dcdcb955)|![finalpjt_restapi_ui (33)](https://github.com/user-attachments/assets/67a3e576-a6fd-40d2-ad25-27d2d83890c6)|![finalpjt_restapi_ui (32)](https://github.com/user-attachments/assets/cb11a938-3b15-443e-ad22-c11046070921)|
+ 
+</div>
+</details>
+
+<details>
+<summary> 스케줄러 페이지 보기</summary>
+<div markdown="1">
+ 
+</div>
+</details>
+
+<details>
+<summary> 메일 페이지 보기</summary>
+<div markdown="1">
+ 
+</div>
+</details>
 
 ## 기타
 > ### DB ERD
