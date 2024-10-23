@@ -1,4 +1,4 @@
-# TeamHRD_K<br/>(`인사관리&협업도구 SYSTEM` Rest API 개발)
+# TeamHRD_K<br/>(`인사관리&협업도구 SYSTEM` REST API 개발)
 *※ 기존에 수행한 https://github.com/choiwanmin/kosta_final_pjt_restapi_frontend 프로젝트를 정비 및 정리*
 
 ## 목차
